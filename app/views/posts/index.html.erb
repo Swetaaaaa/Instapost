@@ -1,11 +1,11 @@
 <% @posts.each do |post| %>
-<%=image_tag post.photo%>
-<%=post.user.name%>
-<%=image_tag post.photo%>
-<%=post.description%>
-<%=link_to 'View Post',posts_path(post.id)%>
-<% if post.user==current_user%>
-<%=link_to 'Edit Post',edit_posts_path(post.id)%>
-<%=link_to 'Delete Post',posts_path(post.id),method: :delete%>
-<%end%>
+    <%=image_tag post.photo%>
+        <%=post.user.name%>
+        <%=image_tag post.photo%>
+        <%=post.description%>
+        <%=link_to 'View Post',posts_path(post.id)%>
+        <% if post.user==current_user%>
+        <%=link_to 'Edit Post',edit_posts_path(post.id)%>
+        <%=link_to 'Delete Post',posts_path(post.id),method: :delete%>
+    <%end%>
 <%end%>

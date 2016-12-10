@@ -5,13 +5,14 @@ class PostsController < ApplicationController
     def new
         @post=Post.new
     end
+    
     def create
      @post=current_user.posts.create(post_params)
-     if @post.valid?
-         redirect_to root_path
-     else
-         render :new,status: :unprocessable_entity
-     end
+         if @post.valid?
+             redirect_to root_path
+         else
+             render :new,status: :unprocessable_entity
+         end
     end
  def index
      @posts=Post.all.order('created_at DESC')
