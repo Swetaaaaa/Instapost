@@ -5,4 +5,5 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
          has_many :posts
          mount_uploader :photo , PhotoUploader
+         has_many :comments
 end
