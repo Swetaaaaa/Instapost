@@ -6,4 +6,5 @@ class User < ActiveRecord::Base
          has_many :posts
          mount_uploader :photo , PhotoUploader
          has_many :comments
+         acts_as_voter
 end

@@ -40,7 +40,7 @@ class PostsController < ApplicationController
  end
  private
  def is_owner?
-     redirect_to root_path if Post.find(params[:id]).user !=current_user
+     redirect_to root_path if Post.find(params[:id]).user != current_user
  end
  
  def post_params
