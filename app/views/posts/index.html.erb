@@ -41,6 +41,9 @@
          <%end%>
      </span>
      <%end%>
+     <span id="like_container_<%=post.id%>">
+     <%=render partial: 'likes',locals: {post: post}%>
+     </span>
     <%if user_signed_in? %>
     <%=simple_form_for Comment.new,url: new_post_comment_path(post),method: :post do |f|%>
     <%=f.input :text,label: 'Comment',placeholder:'Add a comment..'%>
