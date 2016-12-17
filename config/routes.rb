@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'posts#index'
-  resource :posts do
-   resource :comments
+  resources :posts do
+   resources :comments
  end
- resource :users,only: :show
+ resources :users,only: :show
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
