@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>Instapost</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'favicon.ico'%>
   <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='Stylesheet' type='text/css'>
+  
+  
 </head>
 <body>
   <nav>
@@ -14,7 +17,7 @@
         <div class="row">
           <div class="nav_wrapper">
             <div class="col-xs-6">
-         <span class="pull-left brand"><%=link_to 'Instapost',root_path%></span>
+         <span class="nav_links pull-left"><%=link_to 'Share Your Photos Online-Instapost',root_path%></span>
          </div>
     <% if user_signed_in? %>
    <span class="nav_links pull-right"><%= link_to 'New Post',new_post_path %></span>

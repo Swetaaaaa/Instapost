@@ -8,14 +8,15 @@ nav{
 }
 .brand{
     font-family: 'Satisfy',cursive;
-    font-size: 26px;
+    font-size: 22px;
     vertical-align: middle;
 }
 .nav_links{
+    font-family: 'Satisfy',cursive;
     vertical-align: middle;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 0 20px;
+    font-size: 20px;
+    font-weight: 450;
+    margin: 0 16px;
     
 }
 .nav_wrapper{
@@ -39,7 +40,8 @@ nav{
     font-weight: 600;
 }
 .post_body{
-    padding: 10px 24px 0px 24px;
+    padding: 16px 24px 6px 24px;
+    
 }
 .post_comments{
     padding: 10px 25px;
@@ -92,4 +94,4 @@ font-weight: 600;
     }
     
 }
-    }
+    
